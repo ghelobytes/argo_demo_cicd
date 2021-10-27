@@ -14,7 +14,7 @@ spec:
         app: argo-demo-api
     spec:
       containers:
-      - image: ghelobytes/argo_demo_image:v1
+      - image: ghelobytes/argo_demo_image:v2
         name: argo-demo-api
         ports:
         - containerPort: 80

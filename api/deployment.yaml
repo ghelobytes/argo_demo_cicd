@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argo_demo_api
+  name: argo-demo-api
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: argo_demo_api
+      app: argo-demo-api
   template:
     metadata:
       labels:
-        app: argo_demo_api
+        app: argo-demo-api
     spec:
       containers:
       - image: docker.com/ghelobytes/argo_demo_image:v1
-        name: argo_demo_api
+        name: argo-demo-api
         ports:
         - containerPort: 80

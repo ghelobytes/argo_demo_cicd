@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: argo-demo-api
 spec:
-  replicas: 3
+  replicas: 13
   revisionHistoryLimit: 3
   selector:
     matchLabels:
